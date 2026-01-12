@@ -1,0 +1,31 @@
+{
+  "name": "shell-ai",
+  "version": "1.0.0",
+  "description": "Let AI write your shell commands - TypeScript edition using OpenRouter",
+  "main": "dist/index.js",
+  "bin": {
+    "shai": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "ts-node src/index.ts"
+  },
+  "keywords": [
+    "shell",
+    "ai",
+    "cli",
+    "openrouter",
+    "llm"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@inquirer/prompts": "^7.2.1",
+    "marked": "^15.0.6"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.7",
+    "typescript": "^5.7.3"
+  }
+}
