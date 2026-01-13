@@ -1,25 +1,35 @@
 {
-  "name": "shell-ai",
+  "name": "@petah/shell-ai",
   "version": "1.0.0",
   "description": "Let AI write your shell commands - TypeScript edition using OpenRouter",
   "main": "dist/index.js",
   "bin": {
     "shai": "dist/index.js"
   },
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "build": "tsc",
     "start": "node dist/index.js",
-    "dev": "ts-node src/index.ts"
+    "prepublishOnly": "npm run build"
   },
   "keywords": [
     "shell",
     "ai",
     "cli",
     "openrouter",
-    "llm"
+    "llm",
+    "command-line",
+    "natural-language"
   ],
-  "author": "",
+  "author": "petah",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/petah/shell-ai.git"
+  },
+  "homepage": "https://github.com/petah/shell-ai#readme",
   "dependencies": {
     "@inquirer/prompts": "^7.2.1",
     "marked": "^15.0.6"

@@ -7,9 +7,21 @@ Based on [shell-ai](https://github.com/ricklamers/shell-ai) by [Rick Lamers](htt
 ## Installation
 
 ```bash
+# Run directly with npx (no install needed)
+npx @petah/shell-ai list all files
+
+# Or install globally
+npm install -g @petah/shell-ai
+```
+
+### From Source
+
+```bash
+git clone https://github.com/petah/shell-ai.git
+cd shell-ai
 npm install
 npm run build
-npm link  # Optional: makes 'shai' available globally
+npm link  # Makes 'shai' available globally
 ```
 
 ## Usage
